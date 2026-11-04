@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Patil Associate</title>
+<meta name="description" content="Patil Associate — premium property consulting, buying, selling and renting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main>
+<div class="wrap" style="padding-bottom:96px">
+  <div class="contact-grid page-head">
+    <div>
+      <div class="kicker" data-i="contactKicker"></div>
+      <h1 data-i="contactTitle"></h1>
+      <p class="lead" data-i="contactText"></p>
+      <div class="contact-info">
+        <div><small>Phone</small>+91 XXXXX XXXXX</div>
+        <div><small>Email</small>hello@patilassociate.in</div>
+        <div><small>Office</small>Maharashtra, India</div>
+      </div>
+    </div>
+    <div class="panel">
+      <form class="form" id="enquiryForm">
+        <div class="field"><label for="f-name" data-i="name"></label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="f-phone" data-i="phone"></label><input id="f-phone" name="phone" type="tel" inputmode="tel" required autocomplete="tel"></div>
+        <div class="field"><label for="f-topic">&nbsp;</label>
+          <select id="f-topic" name="topic">
+            <option data-i="iBuy"></option><option data-i="iRent"></option><option data-i="iSell"></option><option data-i="iOther"></option>
+          </select></div>
+        <div class="field"><label for="f-msg" data-i="message"></label><textarea id="f-msg" name="message"></textarea></div>
+        <button class="btn btn-dark btn-block" type="submit"><span data-i="send"></span> ↗</button>
+        <p class="note" data-i="demoNote"></p>
+      </form>
+    </div>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

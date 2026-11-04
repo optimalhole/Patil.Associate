@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Patil Associate</title>
+<meta name="description" content="Patil Associate — premium property consulting, buying, selling and renting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+<div id="site-header"></div>
+<main>
+<div class="wrap" style="padding-bottom:96px">
+  <div class="page-head admin-head">
+    <div><div class="kicker">PATIL ASSOCIATE / CMS</div><h1 data-i="adminTitle"></h1></div>
+    <button class="btn" id="logoutBtn" data-i="logout"></button>
+  </div>
+  <div class="admin-grid">
+    <section class="panel">
+      <h3 data-i="addProperty"></h3>
+      <form class="form" id="propForm" style="margin-top:18px">
+        <div class="field"><label data-i="titleLbl"></label><input name="title" required></div>
+        <div class="row2">
+          <div class="field"><label data-i="placeLbl"></label><input name="place"></div>
+          <div class="field"><label data-i="typeLbl"></label>
+            <select name="type">
+              <option value="sale" data-i="sale"></option><option value="rent" data-i="rent"></option>
+              <option value="plot" data-i="plot"></option><option value="commercial" data-i="commercial"></option>
+            </select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label data-i="priceLbl"></label><input name="price"></div>
+          <div class="field"><label data-i="specLbl"></label><input name="spec"></div>
+        </div>
+        <div class="field"><label data-i="imgLbl"></label><input name="img" type="url" placeholder="https://…"></div>
+        <button class="btn btn-dark" type="submit"><span data-i="add"></span> +</button>
+      </form>
+      <div class="admin-list"><h3 data-i="current"></h3><div id="adminProps"></div></div>
+    </section>
+    <section class="panel">
+      <h3 data-i="addVideo"></h3>
+      <form class="form" id="videoForm" style="margin-top:18px">
+        <div class="field"><label data-i="titleLbl"></label><input name="title" required></div>
+        <div class="field"><label data-i="videoUrlLbl"></label><input name="url" type="url" required placeholder="https://…/video.mp4"></div>
+        <button class="btn btn-dark" type="submit"><span data-i="add"></span> +</button>
+      </form>
+      <div class="admin-list"><h3 data-i="currentVideos"></h3><div id="adminVideos"></div></div>
+      <p class="note" data-i="adminNote"></p>
+    </section>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
